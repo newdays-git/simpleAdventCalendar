@@ -1,8 +1,6 @@
 {
-  "name": "NCC_Advent_Calendar_2015",
+  "name": "simple-advent-calendar",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
     "babel-polyfill": "^6.2.0",
     "fetch-jsonp": "^1.0.0",
@@ -37,12 +35,13 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "build": "gulp build",
-    "watch": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "fixpack": "fixpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
+  }
 }
