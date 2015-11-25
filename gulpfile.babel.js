@@ -66,6 +66,7 @@ gulp.task('js:watch', () =>
       'transform-async-to-generator'
     ]
   })
+  .plugin('licensify')
   .bundle()
   .on('error', function(err) {
     console.error(err.stack || err);
@@ -94,10 +95,11 @@ gulp.task('js:build', () =>
       'transform-async-to-generator'
     ]
   })
+  .plugin('licensify')
   .bundle()
   .pipe(exportTo('bundle.js'))
   .pipe(bufferize())
-  .pipe(uglify())
+  .pipe(uglify({ preserveComments: 'license' }))
   .pipe(gulp.dest(path.dist.js))
 );
 

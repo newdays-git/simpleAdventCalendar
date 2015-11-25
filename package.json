@@ -26,6 +26,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-postcss": "^6.0.1",
     "gulp-uglify": "^1.5.1",
+    "licensify": "^2.0.1",
     "livereloadx": "^0.3.9",
     "node-notifier": "^4.3.1",
     "postcss-cssnext": "^2.2.0",
