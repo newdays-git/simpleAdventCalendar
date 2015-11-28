@@ -1,11 +1,13 @@
 # Simple Advent Calendar
 [Adventar](http://www.adventar.org)風のページを静的Webサーバ（Github Pagesなど）で配信できます
 
+[サンプルページはこちら](3846masa.github.io/simpleAdventCalendar/)
+
 Google SpreadSheet でデータを管理します
 
 個人で簡単にAdvent Calendarが作れます
 
-## How to use (Github Pages)
+## How to use (on Github Pages)
 
 ### 1. Google SpreadSheetを作る
 - [参考スプレッドシート](https://docs.google.com/spreadsheets/d/1CPU7pX9fOojYvLYzT6SrT1mrzs_dy2ZxTJOs6L_zgBM/edit?usp=sharing)
