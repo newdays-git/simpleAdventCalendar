@@ -1,7 +1,7 @@
 # Simple Advent Calendar
 [Adventar](http://www.adventar.org)風のページを静的Webサーバ（Github Pagesなど）で配信できます
 
-[サンプルページはこちら](3846masa.github.io/simpleAdventCalendar/)
+[サンプルページはこちら](http://3846masa.github.io/simpleAdventCalendar/)
 
 Google SpreadSheet でデータを管理します
 
