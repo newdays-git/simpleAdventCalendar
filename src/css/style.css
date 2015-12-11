@@ -58,6 +58,14 @@ main {
   margin: auto;
   width: var(--content-width);
   opacity: 0;
+
+  a, a:hover, a:visited {
+    color: var(--text-black-color);
+    &[href="#"] {
+      text-decoration: none;
+      cursor: default;
+    }
+  }
 }
 
 .fc-view-container {
