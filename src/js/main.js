@@ -84,6 +84,9 @@ let makeCal = (entry) => {
 
   let $calCellInner = $(CAL_TEMPLATE).clone();
   $calCellInner.find('.account').text(entry.accountname);
+  let $link = $calCellInner.find('a');
+  addArticleLink($link, entry);
+
   $calCell.append($calCellInner);
 };
 
@@ -96,6 +99,12 @@ let makeList = (entry) => {
 
   let $link = $list.find('.article-title > a');
   $link.text(entry.title || '(TBD)');
+  addArticleLink($link, entry);
+
+  $ENTRIES_LIST.append($list);
+};
+
+let addArticleLink = ($link, entry) => {
   if (!entry.articleurl || moment() < entry.date) {
     $link.on('click', (ev) => {
       ev.preventDefault();
@@ -105,9 +114,7 @@ let makeList = (entry) => {
   } else {
     $link.attr('href', entry.articleurl || '#');
   }
-
-  $ENTRIES_LIST.append($list);
-};
+}
 
 let setThumbnail = async (entry) => {
   let dateStr = entry.date.format('YYYY-MM-DD');
